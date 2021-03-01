@@ -28,6 +28,7 @@ for (let i = 0; i < 16; i++) {                                  // create 15 col
     lastRow.style.height = "50px";
     lastRow.style.width = "50px";
     lastRow.style.breakAfter = "always";                        // force line break after this column
+    lastRow.style.position = "relative";
     container.appendChild(lastRow);                             // place the div in the DOM
     dracula++;
 }
@@ -40,5 +41,3 @@ for (k = 0; k < dracula; k++){
     square.style.backgroundColor = "blue";
 })
 }
-
-
