@@ -32,8 +32,13 @@ for (let i = 0; i < 16; i++) {                                  // create 15 col
     dracula++;
 }
 
-const square = document.querySelector("#square0");
-square.addEventListener("click", () => {
+
+// this block changes the background color of each square clicked on grid
+for (k = 0; k < dracula; k++){
+    const square = document.querySelector(`#square${k}`);
+        square.addEventListener("click", () => {
     square.style.backgroundColor = "blue";
 })
+}
+
 
