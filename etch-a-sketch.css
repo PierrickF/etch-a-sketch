@@ -10,5 +10,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
+    margin-left: 500px;
+    margin-right: 550px;
 }
