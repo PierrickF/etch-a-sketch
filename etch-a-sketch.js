@@ -2,11 +2,12 @@
 const container = document.querySelector("#container");
 
 let dracula = 0;                                                // is a count
+let size = 16;                                                  // default grid size
 
 // this loop creates the structure of the 16x16 grid
-for (let i = 0; i < 16; i++) {                                  // create 15 columns
+for (let i = 0; i < size; i++) {                                // create 15 columns
 
-    for (let j = 0; j < 15; j++) {                              // for each column     
+    for (let j = 0; j < size - 1; j++) {                        // for each column     
         const row = document.createElement("div");              // create 16 rows
         //row.style.backgroundColor = "grey";
         row.id = `square${dracula}`;                            // give a unique id to each square on grid
