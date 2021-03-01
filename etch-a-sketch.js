@@ -36,7 +36,19 @@ for (let i = 0; i < 16; i++) {                                  // create 15 col
 // this block changes the background color of each square on grid when mouseovered
 for (k = 0; k < dracula; k++){
     const square = document.querySelector(`#square${k}`);
-        square.addEventListener("mouseover", () => {
-    square.style.backgroundColor = "blue";
+    square.addEventListener("mouseover", () => {
+        square.style.backgroundColor = "blue";
 })
 }
+
+// this function changes the color to all the squares on grid to white
+function clearGrid() {
+    for (k = 0; k < dracula; k++){
+        const square = document.querySelector(`#square${k}`);
+        square.style.backgroundColor = "white";
+    }
+}
+
+// call the clearGrid() function when the clear button is clicked
+let btnTrigger = document.getElementById("clear");
+btnTrigger.onclick=clearGrid;

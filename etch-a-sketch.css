@@ -1,4 +1,4 @@
-/* make the page fit the window*/
+/* make the page fit the window */
 body {
     font-family: arial, sans-serif;
     height: 100vh;
@@ -10,6 +10,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 500px;
+    margin-left: 500px;     /* adding margins forces the grid to be a square in google chrome */
     margin-right: 550px;
 }
