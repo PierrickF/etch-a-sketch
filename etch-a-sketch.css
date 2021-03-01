@@ -1,0 +1,9 @@
+/* make the page flexible and resizable */
+body {
+    font-family: arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
