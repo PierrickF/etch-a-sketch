@@ -33,10 +33,10 @@ for (let i = 0; i < 16; i++) {                                  // create 15 col
 }
 
 
-// this block changes the background color of each square clicked on grid
+// this block changes the background color of each square on grid when mouseovered
 for (k = 0; k < dracula; k++){
     const square = document.querySelector(`#square${k}`);
-        square.addEventListener("click", () => {
+        square.addEventListener("mouseover", () => {
     square.style.backgroundColor = "blue";
 })
 }
