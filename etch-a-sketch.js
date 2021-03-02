@@ -4,8 +4,8 @@ const container = document.querySelector("#container");
 let dracula = 0;                                                    // is a count
 let gridSize = 16;                                                  // default grid size
 
+// this function creates the structure of the 16x16 (size by default) grid
 function createGrid() {
-    // this loop creates the structure of the 16x16 grid
     for (let i = 0; i < gridSize; i++) {                            // create 15 columns
 
         for (let j = 0; j < gridSize - 1; j++) {                    // for each column     
@@ -24,29 +24,29 @@ function createGrid() {
     }
 }
 
+// this function changes the background color of each square on grid when mouseovered
 function mouseOver() {
-    // this block changes the background color of each square on grid when mouseovered
-    for (k = 0; k < dracula; k++){
-        const square = document.querySelector(`#square${k}`);
-        square.addEventListener("mouseover", () => {
-            square.style.backgroundColor = "blue";
+    for (k = 0; k < dracula; k++){                                  // for as many div as there is
+        const square = document.querySelector(`#square${k}`);       // select each one by name (square0, square1, etc)
+        square.addEventListener("mouseover", () => {                // if mouseover
+            square.style.backgroundColor = "blue";                  // change it to blue
         })
     }
 }
 
 // this function changes the color to all the squares on grid to white
 function clearGrid() {
-    for (k = 0; k < dracula; k++){
-        const square = document.querySelector(`#square${k}`);
-        square.style.backgroundColor = "white";
+    for (k = 0; k < dracula; k++){                                  // for as many div as there is
+        const square = document.querySelector(`#square${k}`);       // select each one by name (square0, square1, etc)
+        square.style.backgroundColor = "white";                     // change it to white
     }
 }
 
 // this function allows the user to select a grid size
 function changeSize() {
-    gridSize = prompt("pouet");
-    container.innerHTML = "";
-    dracula = 0;
+    gridSize = prompt("pouet");                                     // ask for user input
+    container.innerHTML = "";                                       // delete previous grid
+    dracula = 0;                                                    // reset the count to 0
     createGrid();
     mouseOver();
 }
