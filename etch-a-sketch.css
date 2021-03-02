@@ -5,3 +5,18 @@
     height: 720px;
     width: 720px;
 }
+
+.row {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    flex-grow: 1;
+}
+
+.lastRow {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    flex-grow: 1;
+    break-after: always; /* BUG: IGNORED BY GOOGLE CHROME */
+}
