@@ -1,15 +1,7 @@
-/* make the page fit the window */
-body {
-    font-family: arial, sans-serif;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-}
-
 #container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 500px;     /* adding margins forces the grid to be a square in google chrome */
-    margin-right: 550px;
+    height: 720px;
+    width: 720px;
 }

@@ -9,25 +9,22 @@ for (let i = 0; i < size; i++) {                                // create 15 col
 
     for (let j = 0; j < size - 1; j++) {                        // for each column     
         const row = document.createElement("div");              // create 16 rows
-        //row.style.backgroundColor = "grey";
         row.id = `square${dracula}`;                            // give a unique id to each square on grid
         row.style.borderStyle = "solid";
         row.style.borderColor = "black";
         row.style.borderWidth = "1px";
-        row.style.height = "50px";
-        row.style.width = "50px";
+        row.style.flexGrow = 1;
         container.appendChild(row);                             // place the div in the DOM
         dracula++;
     }
 
     const lastRow = document.createElement("div");              // create one last column
-    //lastRow.style.backgroundColor = "grey";
     lastRow.id = `square${dracula}`;                            // give a unique id to each square on grid
     lastRow.style.borderStyle = "solid";
     lastRow.style.borderColor = "black";
     lastRow.style.borderWidth = "1px";
-    lastRow.style.height = "50px";
-    lastRow.style.width = "50px";
+    lastRow.style.flexGrow = 1;
+    // THE NEXT LINE IS IGNORED BY GOOGLE CHROME
     lastRow.style.breakAfter = "always";                        // force line break after this column
     container.appendChild(lastRow);                             // place the div in the DOM
     dracula++;
