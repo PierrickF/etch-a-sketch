@@ -18,15 +18,16 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: auto;
+    margin-right: 8px;
     margin-bottom: 10px;
 }
 
 #clear {
-    margin-right: 10px;
+    margin-right: 2px;
 }
 
 #size {
-    margin-right: 10px;
+    margin-left: 2px;
 }
 
 #container {
