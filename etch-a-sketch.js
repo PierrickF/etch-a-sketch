@@ -24,12 +24,22 @@ function createGrid() {
     }
 }
 
+
+// this function returns a random RGB color
+function randomizeColor() {
+    let r = Math.floor(Math.random() * 256);                        // random number between 0 and 255
+    let g = Math.floor(Math.random() * 256);                        // random number between 0 and 255
+    let b = Math.floor(Math.random() * 256);                        // random number between 0 and 255
+    let randomColor = `rgb(${r}, ${g}, ${b})`;                      // convert to string
+    return randomColor;
+}
+
 // this function changes the background color of each square on grid when mouseovered
 function mouseOver() {
     for (k = 0; k < dracula; k++){                                  // for as many div as there is
         const square = document.querySelector(`#square${k}`);       // select each one by name (square0, square1, etc)
         square.addEventListener("mouseover", () => {                // if mouseover
-            square.style.backgroundColor = "blue";                  // change it to blue
+            square.style.backgroundColor = randomizeColor();        // change to a random color
         })
     }
 }
