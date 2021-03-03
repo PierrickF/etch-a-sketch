@@ -48,7 +48,7 @@ function changeSize() {
     if (gridSize < 1 || gridSize > 100) {                           // input sanitation
         alert("Grid size must be between 1 and 100.");
     }
-    else if ( isNaN(gridSize) != false){                            // input sanitation
+    else if ( isNaN(gridSize) == true){                             // input sanitation
         alert("Grid size must be a number.");
     }
     // this else statement ensures that the grid isn't removed if there is an input error
