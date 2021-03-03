@@ -8,19 +8,15 @@ let gridSize = 16;                                                  // default g
 function createGrid() {
     for (let i = 0; i < gridSize; i++) {                            // create 15 columns
 
-        for (let j = 0; j < gridSize - 1; j++) {                    // for each column     
+        for (let j = 0; j < gridSize; j++) {                    // for each column     
             const row = document.createElement("div");              // create 16 rows
             row.id = `square${dracula}`;                            // give a unique id to each square on grid
             row.classList.add("row");                               // apply some CSS
+            row.style.width = `${480 / gridSize}px`;
+            row.style.height = `${480 / gridSize}px`;
             container.appendChild(row);                             // place the div in the DOM
             dracula++;
         }
-
-        const lastRow = document.createElement("div");              // create one last column
-        lastRow.id = `square${dracula}`;                            // give a unique id to each square on grid
-        lastRow.classList.add("lastRow");                           // apply some CSS
-        container.appendChild(lastRow);                             // place the div in the DOM
-        dracula++;
     }
 }
 

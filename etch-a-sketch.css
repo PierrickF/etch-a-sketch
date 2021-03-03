@@ -32,24 +32,13 @@ h1 {
 #container {
     display: flex;
     align-self: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     height: 480px;
     width: 480px;
     margin-bottom: auto;
 }
 
 .row {
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.281);
-    border-width: 1px;
-    flex-grow: 1;
-}
-
-.lastRow {
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.281);
-    border-width: 1px;
-    flex-grow: 1;
-    break-after: always; /* BUG: IGNORED BY GOOGLE CHROME */
+    box-shadow:0px 0px 0px 1px rgba(0, 0, 0, 0.100);
+    flex-grow: 1; 
 }
