@@ -44,11 +44,21 @@ function clearGrid() {
 
 // this function allows the user to select a grid size
 function changeSize() {
-    gridSize = prompt("pouet");                                     // ask for user input
-    container.innerHTML = "";                                       // delete previous grid
-    dracula = 0;                                                    // reset the count to 0
-    createGrid();
-    mouseOver();
+    gridSize = prompt("Enter a new grid size (1 - 100):");          // ask for user input
+    if (gridSize < 1 || gridSize > 100) {                           // input sanitation
+        alert("Grid size must be between 1 and 100.");
+    }
+    else if ( isNaN(gridSize) != false){                            // input sanitation
+        alert("Grid size must be a number.");
+    }
+    // this else statement ensures that the grid isn't removed if there is an input error
+    // which would lead to a mostly blank page
+    else {
+        container.innerHTML = "";                                   // delete previous grid
+        dracula = 0;                                                // reset the count to 0
+        createGrid();
+        mouseOver();
+    }
 }
 
 // call the clearGrid() function when the clear button is clicked
