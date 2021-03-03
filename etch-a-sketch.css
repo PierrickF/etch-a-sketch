@@ -1,6 +1,19 @@
 body {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+}
+
+h1 {
+    margin: auto;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+#buttons {
+    margin: auto;
+    margin-top: 100px;
 }
 
 #container {
@@ -11,11 +24,6 @@ body {
     width: 480px;
     margin:auto;
     margin-top: 10px;
-}
-
-#buttons {
-    margin: auto;
-    margin-top: 300px;
 }
 
 .row {
