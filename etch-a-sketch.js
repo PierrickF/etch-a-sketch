@@ -54,7 +54,7 @@ function clearGrid() {
 
 // this function allows the user to select a grid size
 function changeSize() {
-    gridSize = prompt("Enter a new grid size (1 - 100):");          // ask for user input
+    gridSize = prompt("Enter a new grid size between 1 and 100:");  // ask for user input
     if (gridSize < 1 || gridSize > 100) {                           // input sanitation
         alert("Grid size must be between 1 and 100.");
     }
