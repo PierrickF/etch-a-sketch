@@ -24,7 +24,6 @@ function createGrid() {
     }
 }
 
-
 // this function returns a random RGB color
 function randomizeColor() {
     let r = Math.floor(Math.random() * 256);                        // random number between 0 and 255
