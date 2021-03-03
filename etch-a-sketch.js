@@ -48,7 +48,7 @@ function mouseOver() {
 function clearGrid() {
     for (k = 0; k < dracula; k++){                                  // for as many div as there is
         const square = document.querySelector(`#square${k}`);       // select each one by name (square0, square1, etc)
-        square.style.backgroundColor = "white";                     // change it to white
+        square.style.backgroundColor = "transparent";                     // change it to white
     }
 }
 
