@@ -8,7 +8,7 @@ let gridSize = 16;                                                  // default g
 function createGrid() {
     for (let i = 0; i < gridSize; i++) {                            // create 15 columns
 
-        for (let j = 0; j < gridSize; j++) {                    // for each column     
+        for (let j = 0; j < gridSize; j++) {                        // for each column     
             const row = document.createElement("div");              // create 16 rows
             row.id = `square${dracula}`;                            // give a unique id to each square on grid
             row.classList.add("row");                               // apply some CSS
@@ -43,7 +43,7 @@ function mouseOver() {
 function clearGrid() {
     for (k = 0; k < dracula; k++){                                  // for as many div as there is
         const square = document.querySelector(`#square${k}`);       // select each one by name (square0, square1, etc)
-        square.style.backgroundColor = "transparent";                     // change it to white
+        square.style.backgroundColor = "transparent";               // change it to white
     }
 }
 
