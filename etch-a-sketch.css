@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 720px;
-    width: 720px;
+    height: 480px;
+    width: 480px;
 }
 
 .row {
